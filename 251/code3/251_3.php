@@ -11,21 +11,10 @@
         die("Connection Failed: " . $conn->connect_error);
     }
 
-    echo "
-    <style>
-            table {
-                width: 50%;
-                border-collapse: collapse;
-            }
-
-            table,
-            td,
-            th {
-                border: 1px solid black;
-                text-align: center;
-            }
-        </style>
-    ";
+    echo "<style>
+    table { border-collapse: collapse; width: 50%; }
+    table, td, th { border: 1px solid black; padding: 8px; text-align: center; }
+</style>";
 
     // Task 3a
     $sql1 = "
